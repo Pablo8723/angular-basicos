@@ -1,0 +1,22 @@
+<h3>Agregar</h3>
+        <hr>
+<!-- el ngSubmit evita el refres en la pagina cada que se presiona un boton -->
+        <form (ngSubmit)="Agregar()">
+            <input 
+                type="text" 
+                placeholder="Nombre"
+                name="nombre"
+                [(ngModel)]="nuevo.nombre"
+            >
+            <!-- esto fue remplazado por el ngModule -->
+            <!-- [value]="nuevo.nombre"
+                (input)="cambiarNombre($event)" -->
+            <input 
+                type="number" 
+                placeholder="Poder"
+                name="poder"
+                [(ngModel)]="nuevo.poder"
+            >
+
+            <button type="submit">Agrgar</button>
+        </form>
